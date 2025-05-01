@@ -1,14 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Car {
-public:    
+class Car
+{
+public:
     string name;
     int price;
     int seaters;
     string type;
 };
 
-int main (){
+void print(Car c) // creating a function to print the details.
+{
+    cout << c.name << " " << c.price << " " << c.seaters << " " << c.type << endl;
+}
+int main()
+{
     Car c1;
     c1.name = "BMW";
     c1.price = 1000000;
@@ -21,7 +27,9 @@ int main (){
     c2.seaters = 5;
     c2.type = "Budget";
 
+    // cout<<c1.name<<" "<<c1.price<<" "<<c1.seaters<<" "<<c1.type<< endl;
+    // cout<<c2.name<<" "<<c2.price<<" "<<c2.seaters<<" "<<c2.type<< endl;
 
-    cout<<c1.name<<" "<<c1.price<<" "<<c1.seaters<<" "<<c1.type<< endl;
-    cout<<c2.name<<" "<<c2.price<<" "<<c2.seaters<<" "<<c2.type<< endl;
+    print(c1);
+    print(c2);
 };

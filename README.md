@@ -8,3 +8,8 @@ You can’t store all of this mixed data in a single array because:
 
 "To store all this related information together, you create your own custom data type – this is called a user-defined data type."
 
+
+PASSING OBJECTS TO FUNCTION:-
+A function that automatically prints the details of a class when it's called.
+so it saves times and reduces the complexity of the code/program.
+
