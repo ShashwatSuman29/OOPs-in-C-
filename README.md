@@ -21,3 +21,19 @@ PASS BY REFRENCE:-
 In pass by reference, the actual variable is passed to the function using a reference (&).
 Any change made inside the function directly affects the original variable.
 
+What is a Constructor in C++?
+A constructor is a special function inside a class that automatically runs when you create an object of that class.
+
+It is used to:
+
+Give initial values to the object’s data members.
+
+Set things up when the object is created.
+
+✅ Basic Rules of Constructors:
+A constructor has the same name as the class.
+
+It does not have any return type (not even void).
+
+It runs automatically when an object is made.
+
