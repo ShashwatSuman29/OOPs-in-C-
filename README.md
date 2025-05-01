@@ -13,3 +13,11 @@ PASSING OBJECTS TO FUNCTION:-
 A function that automatically prints the details of a class when it's called.
 so it saves times and reduces the complexity of the code/program.
 
+PASS BY VALUE:-
+In pass by value, a copy of the original variable or object is passed to the function.
+Any changes made inside the function do NOT affect the original variable.
+
+PASS BY REFRENCE:-
+In pass by reference, the actual variable is passed to the function using a reference (&).
+Any change made inside the function directly affects the original variable.
+
