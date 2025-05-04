@@ -36,6 +36,11 @@ int main (){
         s3.rno = 3;
         s3.cpga = 8.0;
 
+        Student s4 = s1; // deep copy
+        s4.name = "Deepak"; 
+
+        Student s5(s1); // copy constructor
+
         
         cout<< s1.name << " " << s1.rno << " " << s1.cpga << endl;
         
@@ -43,7 +48,8 @@ int main (){
 
         cout<< s3.name << " " << s3.rno << " " << s3.cpga << endl;
 
-        
+        cout<< s4.name << " " << s4.rno << " " << s4.cpga << endl;
 
-        
+        cout<< s5.name << " " << s5.rno << " " << s5.cpga << endl;   
+      
 }
