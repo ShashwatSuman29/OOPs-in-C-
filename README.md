@@ -50,3 +50,144 @@ It is used to:
 
 ---
 
+# 🚀 Types of Constructors in C++
+
+In C++, **constructors** are special functions that are **automatically called** when an object of a class is created. They are mainly used to **initialize object properties**.
+
+---
+
+## 🔹 1. Default Constructor
+
+A **default constructor** takes **no arguments**. It sets **default values** to the object's data members.
+
+### ✅ Example:
+```cpp
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int roll;
+
+    // Default Constructor
+    Student() {
+        name = "Unknown";
+        roll = 0;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Roll: " << roll << endl;
+    }
+};
+
+int main() {
+    Student s1;
+    s1.display();
+    return 0;
+}
+```
+
+### 🧾 Output:
+```
+Name: Unknown, Roll: 0
+```
+
+---
+
+## 🔹 2. Parameterized Constructor
+
+A **parameterized constructor** takes arguments so you can assign **custom values** to the object at the time of creation.
+
+### ✅ Example:
+```cpp
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int roll;
+
+    // Parameterized Constructor
+    Student(string n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Roll: " << roll << endl;
+    }
+};
+
+int main() {
+    Student s1("Shashwat", 101);
+    s1.display();
+    return 0;
+}
+```
+
+### 🧾 Output:
+```
+Name: Shashwat, Roll: 101
+```
+
+---
+
+## 🔹 3. Copy Constructor
+
+A **copy constructor** creates a **new object** by **copying values** from an existing object of the same class.
+
+### ✅ Example:
+```cpp
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int roll;
+
+    // Parameterized Constructor
+    Student(string n, int r) {
+        name = n;
+        roll = r;
+    }
+
+    // Copy Constructor
+    Student(const Student &s) {
+        name = s.name;
+        roll = s.roll;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Roll: " << roll << endl;
+    }
+};
+
+int main() {
+    Student s1("Shashwat", 101);
+    Student s2 = s1; // Copy constructor is called
+    s2.display();
+    return 0;
+}
+```
+
+### 🧾 Output:
+```
+Name: Shashwat, Roll: 101
+```
+
+---
+
+## 📌 Summary Table
+
+| Constructor Type         | Arguments      | Purpose                                     |
+|--------------------------|----------------|---------------------------------------------|
+| Default Constructor      | ❌ No          | Sets default values                         |
+| Parameterized Constructor| ✅ Yes         | Sets custom values during object creation   |
+| Copy Constructor         | ✅ Yes (object)| Creates a new object by copying another     |
+
+---
+
+> 💡 Constructors make object creation easier and more flexible by initializing data automatically.
