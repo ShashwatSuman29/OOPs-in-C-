@@ -382,3 +382,86 @@ When the size and capacity of the vector is same , then it will create a new arr
 - You don't need to know the size in advance.
 - Automatically manages memory.
 - Comes with useful built-in functions (like `.push_back()`, `.size()`, `.pop_back()`, etc.).
+
+# 🔐 Access Modifiers in C++
+
+In C++, **access modifiers** are used to set the level of access (or visibility) for **class members** (variables and functions).
+
+They help protect the internal data of a class and define how that data can be accessed from outside the class.
+
+---
+
+## ✅ Types of Access Modifiers:
+
+### 1. `public`
+
+- Members declared as `public` **can be accessed from anywhere** (inside or outside the class).
+- No restriction on access.
+
+```cpp
+class Student {
+public:
+    int roll;
+    void display() {
+        cout << "Roll: " << roll;
+    }
+};
+2. private
+Members declared as private can only be accessed within the class.
+
+Cannot be accessed directly from outside the class.
+
+cpp
+Copy
+Edit
+class Student {
+private:
+    int roll;
+
+public:
+    void setRoll(int r) {
+        roll = r;
+    }
+
+    void display() {
+        cout << "Roll: " << roll;
+    }
+};
+3. protected
+Works like private, but it can also be accessed by derived (child) classes.
+
+Not accessible from outside the class directly.
+
+cpp
+Copy
+Edit
+class Base {
+protected:
+    int value;
+};
+
+class Derived : public Base {
+public:
+    void show() {
+        value = 100; // allowed because it's protected
+        cout << value;
+    }
+};
+🧠 Summary Table
+Access Modifier	Access in Class	Access Outside Class	Access in Derived Class
+public	✅ Yes	✅ Yes	✅ Yes
+private	✅ Yes	❌ No	❌ No
+protected	✅ Yes	❌ No	✅ Yes
+
+🚀 Access modifiers help in encapsulation — hiding internal details and exposing only necessary parts of your code.
+
+yaml
+Copy
+Edit
+
+---
+
+
+
+
+
