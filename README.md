@@ -287,3 +287,84 @@ int main() {
 ---
 
 > 🚀 Object pointers give you more control and flexibility in object-oriented programming in C++.
+
+# 💡 Dynamic Memory Allocation in C++
+
+**Dynamic memory allocation** means allocating memory **at runtime** (while the program is running), instead of at compile time.
+
+In C++, we use the `new` and `delete` operators to manage dynamic memory.
+
+---
+
+## 📌 Why Use Dynamic Allocation?
+
+- When you **don’t know the size** of data in advance.
+- To **create objects or arrays at runtime**.
+- To **efficiently manage memory usage**.
+
+---
+
+## ✅ Syntax
+
+### 🔸 Allocate memory:
+```cpp
+int *ptr = new int;        // Single int
+int *arr = new int[5];     // Array of 5 integers
+```
+
+### 🔸 Free memory:
+```cpp
+delete ptr;       // Free single variable
+delete[] arr;     // Free array
+```
+
+---
+
+## ✅ Example: Dynamic Allocation for Single Variable
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int *p = new int;   // allocate memory
+    *p = 10;            // assign value
+    cout << *p << endl;
+
+    delete p;           // free memory
+    return 0;
+}
+```
+
+---
+
+## ✅ Example: Dynamic Allocation for Object
+```cpp
+class Student {
+public:
+    int roll;
+    void display() {
+        cout << "Roll: " << roll << endl;
+    }
+};
+
+int main() {
+    Student *s = new Student;
+    s->roll = 101;
+    s->display();
+
+    delete s;  // free memory
+    return 0;
+}
+```
+
+---
+
+## ⚠️ Important Points
+
+- Always use `delete` or `delete[]` to **free memory** created with `new`.
+- Not freeing memory can cause **memory leaks**.
+- `new` returns a pointer to the allocated memory.
+
+---
+
+> 🧠 Dynamic memory allocation gives your programs flexibility and efficient memory usage — especially useful in larger applications.
