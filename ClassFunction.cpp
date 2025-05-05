@@ -14,7 +14,7 @@ class Cricketer
     }
  void print()
     {
-        cout << name << " " << runs << " " << average << endl;
+        cout << this->name << " " << this->runs << " " << this->average << endl;
     }
     
 };
