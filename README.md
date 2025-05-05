@@ -483,7 +483,13 @@ They help in achieving **encapsulation** by keeping the data safe and providing 
 ## 🔹 Setter (Mutator Function)
 - Used to set/update the value of a private data member.
 
-```
+## 🧬 What is Inheritance in C++?
+
+**Inheritance** is one of the core features of Object-Oriented Programming (OOP). It allows a class (called the **derived** or **child class**) to inherit properties and behaviors (data members and member functions) from another class (called the **base** or **parent class**).
+
+This helps in **code reusability** and creates a logical hierarchy between classes.
+
+---
 
 
 
