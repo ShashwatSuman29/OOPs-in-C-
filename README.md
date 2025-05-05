@@ -372,7 +372,8 @@ int main() {
 # 📚 Vector in C++
 
 In C++, a **vector** is a part of the Standard Template Library (STL).  
-It is a **dynamic array** that can **grow or shrink in size automatically** as elements are added or removed.
+It is a **dynamic array** that can **grow or shrink in size automatically** as elements are added or removed. 
+When the size and capacity of the vector is same , then it will create a new array/vector of double size.
 
 ---
 
