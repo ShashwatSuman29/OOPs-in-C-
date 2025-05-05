@@ -214,3 +214,76 @@ When a constructor initializes an object’s data members, the `this` pointer he
 ---
 
 > 🔍 `this` is especially useful in constructors to write clean, readable, and unambiguous code.
+
+# 📌 Object Pointer in C++
+
+In C++, an **object pointer** is a pointer that is used to **store the address of an object**.  
+Just like you can create a pointer to an `int`, `float`, or other data type, you can also create a pointer to a **class object**.
+
+---
+
+## 🧠 Why Use Object Pointers?
+
+- To **access members** of an object dynamically.
+- To **pass large objects efficiently**.
+- To work with **arrays of objects**, **dynamic memory**, and **polymorphism** (advanced use).
+
+---
+
+## ✅ Syntax:
+```cpp
+ClassName *ptr;
+```
+
+---
+
+## ✅ Example:
+```cpp
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int roll;
+
+    void display() {
+        cout << "Name: " << name << ", Roll: " << roll << endl;
+    }
+};
+
+int main() {
+    Student s1;
+    s1.name = "Shashwat";
+    s1.roll = 101;
+
+    // Object pointer
+    Student *ptr = &s1;
+
+    // Accessing members using pointer
+    ptr->display();  // Same as s1.display()
+
+    return 0;
+}
+```
+
+---
+
+## 🔹 Important Operators:
+
+| Operator | Use                                      |
+|----------|------------------------------------------|
+| `->`     | To access members using object pointer   |
+| `*`      | To dereference the pointer               |
+
+---
+
+## 📌 Summary
+
+- Object pointers store the **address of class objects**.
+- Use `->` to access class members through the pointer.
+- Useful for dynamic memory allocation, passing by reference, and OOP concepts like polymorphism.
+
+---
+
+> 🚀 Object pointers give you more control and flexibility in object-oriented programming in C++.
