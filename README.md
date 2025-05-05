@@ -481,10 +481,10 @@ They help in achieving **encapsulation** by keeping the data safe and providing 
 - Usually starts with the word `get`.
 
 ## 🔹 Setter (Mutator Function)
-Used to set/update the value of a private data member.
+- Used to set/update the value of a private data member.
 
-Usually starts with the word set.
 
-```
+
+
 
 
