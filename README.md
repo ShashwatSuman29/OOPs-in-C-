@@ -406,14 +406,15 @@ public:
         cout << "Roll: " << roll;
     }
 };
-2. private
+
+```
+### 2. `private`
 Members declared as private can only be accessed within the class.
 
 Cannot be accessed directly from outside the class.
 
-cpp
-Copy
-Edit
+```cpp
+Copy code
 class Student {
 private:
     int roll;
@@ -427,14 +428,15 @@ public:
         cout << "Roll: " << roll;
     }
 };
-3. protected
+
+```
+### 3. `protected`
 Works like private, but it can also be accessed by derived (child) classes.
 
 Not accessible from outside the class directly.
 
-cpp
-Copy
-Edit
+```cpp
+Copy code
 class Base {
 protected:
     int value;
@@ -447,20 +449,14 @@ public:
         cout << value;
     }
 };
-🧠 Summary Table
-Access Modifier	Access in Class	Access Outside Class	Access in Derived Class
-public	✅ Yes	✅ Yes	✅ Yes
-private	✅ Yes	❌ No	❌ No
-protected	✅ Yes	❌ No	✅ Yes
 
-🚀 Access modifiers help in encapsulation — hiding internal details and exposing only necessary parts of your code.
+```
 
-yaml
-Copy
-Edit
-
----
-
+| Access Modifier | Access in Class | Access Outside Class | Access in Derived Class |
+| --------------- | --------------- | -------------------- | ----------------------- |
+| `public`        | ✅ Yes           | ✅ Yes                | ✅ Yes                   |
+| `private`       | ✅ Yes           | ❌ No                 | ❌ No                    |
+| `protected`     | ✅ Yes           | ❌ No                 | ✅ Yes                   |
 
 
 
