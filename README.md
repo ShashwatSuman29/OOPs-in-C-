@@ -459,5 +459,32 @@ public:
 | `protected`     | ✅ Yes           | ❌ No                 | ✅ Yes                   |
 
 
+# 🎯 Getter and Setter in C++
+
+In C++, **getters** and **setters** are special functions used to **access** and **update** private data members of a class.
+
+They help in achieving **encapsulation** by keeping the data safe and providing controlled access.
+
+---
+
+## ✅ Why Use Getter and Setter?
+
+- To protect the internal data of the class.
+- To control how data is read or modified.
+- To apply validation before setting a value.
+
+---
+
+## 🔹 Getter (Access Function)
+
+- Used to **read/access** the value of a private data member.
+- Usually starts with the word `get`.
+
+## 🔹 Setter (Mutator Function)
+Used to set/update the value of a private data member.
+
+Usually starts with the word set.
+
+```
 
 
