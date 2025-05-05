@@ -191,3 +191,26 @@ Name: Shashwat, Roll: 101
 ---
 
 > 💡 Constructors make object creation easier and more flexible by initializing data automatically.
+
+
+# 🔑 `this` Keyword in C++ (Constructor Context)
+
+In C++, the `this` keyword is a **special pointer** available inside all **non-static member functions**, including **constructors**.  
+It points to the **current object** that is being created or used.
+
+---
+
+## 📌 In the Context of Constructors:
+
+When a constructor initializes an object’s data members, the `this` pointer helps **distinguish between local variables and class members** if they have the **same name**.
+
+---
+
+## 🧠 Why Use `this`?
+
+- When the **parameter name is the same** as the **data member name**, `this->` makes it clear that you're referring to the **data member**.
+- It **improves code clarity** and **prevents confusion**.
+
+---
+
+> 🔍 `this` is especially useful in constructors to write clean, readable, and unambiguous code.
