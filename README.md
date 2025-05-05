@@ -368,3 +368,16 @@ int main() {
 ---
 
 > 🧠 Dynamic memory allocation gives your programs flexibility and efficient memory usage — especially useful in larger applications.
+
+# 📚 Vector in C++
+
+In C++, a **vector** is a part of the Standard Template Library (STL).  
+It is a **dynamic array** that can **grow or shrink in size automatically** as elements are added or removed.
+
+---
+
+## ✅ Why Use Vectors?
+
+- You don't need to know the size in advance.
+- Automatically manages memory.
+- Comes with useful built-in functions (like `.push_back()`, `.size()`, `.pop_back()`, etc.).
