@@ -17,6 +17,10 @@ class Cricketer
         cout << this->name << " " << this->runs << " " << this->average << endl;
     }
     
+   int matches(){
+    return runs/average;
+    
+   } 
 };
 
 int main()
@@ -26,4 +30,6 @@ int main()
 
     c1.print();
     c2.print();
+    cout << c1.matches() << endl;
+    cout << c2.matches() << endl;
 }
