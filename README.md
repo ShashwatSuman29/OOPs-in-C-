@@ -702,3 +702,25 @@ An **abstract class** is a class that cannot be instantiated and contains at lea
 | Instantiation   | Cannot instantiate directly                                  |
 
 
+# Pure Virtual Function in C++
+
+A **pure virtual function** in C++ is a virtual function that is declared within a base class and is meant to be **overridden** in derived classes.
+
+## Key Characteristics:
+
+- Has no implementation in the base class.
+- Forces derived classes to provide an implementation.
+- Makes the class an **abstract class**.
+
+## Abstract Class:
+
+When a class contains **at least one pure virtual function**, it becomes an **abstract class** and **cannot be instantiated**.
+
+## Summary:
+
+| Feature                | Description                                                   |
+|------------------------|---------------------------------------------------------------|
+| Pure Virtual Function  | A virtual function with no definition, declared as `= 0`      |
+| Abstract Class         | A class with at least one pure virtual function               |
+| Instantiable           | ❌ No (cannot create objects directly)                         |
+| Purpose                | To define an interface and enforce implementation in children |
