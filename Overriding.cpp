@@ -29,6 +29,6 @@ class Bike : public Scooty{
 
 int main()
 {
-    Scooty* b = new Bike();
+    Scooty* b = new Bike(); //object pointer
     b->sound(); // 
 }
