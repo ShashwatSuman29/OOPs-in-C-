@@ -609,6 +609,41 @@ obj->show();  // Output: Derived class
 
 
 
+# Static Members and Static Functions in C++
+
+## Static Member Variables
+
+A **static member variable** is shared among all objects of a class. It is not tied to any one object, and there is only one copy of it in memory regardless of how many objects are created.
+
+### Characteristics:
+- Declared using the `static` keyword inside the class.
+- Shared by all instances of the class.
+- Useful for tracking common properties like object count, global settings, etc.
+---
+
+## Static Member Functions
+
+A **static member function** can be called using the class name without creating an object. It can only access **static members** (both variables and functions).
+
+### Characteristics:
+- Declared using the `static` keyword.
+- Cannot access non-static members or `this` pointer.
+- Often used to manipulate or access static data members.
+
+---
+
+## Summary
+
+| Feature             | Static Member Variable       | Static Member Function             |
+|---------------------|------------------------------|------------------------------------|
+| Shared across objects | ✅ Yes                     | N/A                                |
+| Accesses static members | ✅ Yes                  | ✅ Yes                              |
+| Accesses non-static members | ❌ No              | ❌ No                               |
+| Called using object | ✅ Optional                  | ✅ Optional                         |
+| Called using class name | ✅ Yes                  | ✅ Yes                              |
+
+
+
 
 
 
