@@ -24,6 +24,10 @@ public:
     void sum (string a , string b){
         cout << a+b <<endl;
     };
+
+//     int sum (int a , int b , int c){
+//         return a+b+c;   thorws error because we cannot perform function overloading with different data/return types.
+//     }
 };
 int main()
 {
