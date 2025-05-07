@@ -535,6 +535,80 @@ Each type of inheritance helps model different real-world relationships and prom
 
 
 
+# Polymorphism in Object-Oriented Programming
+
+**Polymorphism** means "many forms". In OOP, it refers to the ability of a function, object, or operator to behave differently based on context.
+
+## Types of Polymorphism
+
+### 1. Compile-Time Polymorphism (Static Binding)
+- Achieved during compile time.
+- Common forms:
+  - **Function Overloading**
+  - **Operator Overloading**
+  - **Constructor Overloading**
+
+**Example: Function Overloading**
+```cpp
+class Print {
+public:
+    void show(int i) { std::cout << "Integer: " << i << std::endl; }
+    void show(double d) { std::cout << "Double: " << d << std::endl; }
+};
+```
+
+**Example: Constructor Overloading**
+```cpp
+class Point {
+public:
+    Point() {}
+    Point(int x, int y) {}
+};
+```
+
+**Example: Operator Overloading**
+```cpp
+class Complex {
+public:
+    int real, imag;
+    Complex operator+(const Complex& obj) {
+        Complex res;
+        res.real = real + obj.real;
+        res.imag = imag + obj.imag;
+        return res;
+    }
+};
+```
+
+### 2. Run-Time Polymorphism (Dynamic Binding)
+- Achieved during runtime using **inheritance** and **virtual functions**.
+- Enables method overriding.
+
+**Example: Runtime Polymorphism**
+```cpp
+class Base {
+public:
+    virtual void show() { std::cout << "Base class" << std::endl; }
+};
+
+class Derived : public Base {
+public:
+    void show() override { std::cout << "Derived class" << std::endl; }
+};
+
+Base* obj = new Derived();
+obj->show();  // Output: Derived class
+```
+
+## Summary Table
+
+| Type                  | Binding Time | Mechanism                        | Example                           |
+|-----------------------|--------------|----------------------------------|------------------------------------|
+| Compile-Time          | Compile Time | Function/Constructor/Operator Overloading | `show(int)` and `show(double)`    |
+| Run-Time              | Run Time     | Inheritance + Virtual Functions  | `Base* b = new Derived(); b->show();` |
+
+
+
 
 
 
