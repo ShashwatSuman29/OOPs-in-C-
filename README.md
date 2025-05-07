@@ -644,6 +644,30 @@ A **static member function** can be called using the class name without creating
 
 
 
+# Encapsulation in C++
+
+**Encapsulation** is one of the fundamental principles of Object-Oriented Programming (OOP). It refers to the bundling of data (variables) and methods (functions) that operate on the data into a single unit, i.e., a class, and restricting direct access to some of the object's components.
+
+## Key Points:
+- Achieved using **classes** in C++.
+- **Private** and **protected** access modifiers are used to hide data.
+- Provides **data hiding** and **controlled access** via public methods (getters/setters).
+- Enhances **security**, **modularity**, and **maintainability** of code.
+
+## Benefits:
+- Prevents unauthorized access to internal data.
+- Maintains integrity by validating inputs through methods.
+- Makes code more modular and easier to debug or maintain.
+
+## Summary
+
+| Feature             | Description                                |
+|---------------------|--------------------------------------------|
+| Purpose             | Data protection and controlled access      |
+| Implemented via     | Classes and access specifiers              |
+| Common Tools        | `private`, `public`, `protected`, getters/setters |
+
+
 
 
 
