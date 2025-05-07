@@ -669,5 +669,36 @@ A **static member function** can be called using the class name without creating
 
 
 
+# Abstraction in C++
+
+**Abstraction** in C++ is an object-oriented programming principle that focuses on exposing only relevant functionalities while hiding internal implementation details.
+
+## Key Points:
+
+- **Abstraction** reduces complexity by hiding unneeded internal mechanics from the user.
+- It emphasizes **what** an object does rather than **how** it does it.
+- In C++, abstraction is mainly implemented using **abstract classes** and **interfaces**.
+
+---
+
+## Abstract Class in C++
+
+An **abstract class** is a class that cannot be instantiated and contains at least one **pure virtual function**. It serves as a blueprint for other classes.
+
+### Characteristics:
+- Acts as a base class for other derived classes.
+- Enforces a contract for derived classes to implement specific behavior.
+- Useful when you want to provide a common interface for different implementations.
+
+---
+
+## Summary
+
+| Concept         | Description                                                  |
+|-----------------|--------------------------------------------------------------|
+| Abstraction     | Hiding internal details and exposing only essential features |
+| Abstract Class  | A class with at least one pure virtual function              |
+| Purpose         | Define interfaces and enforce method implementation          |
+| Instantiation   | Cannot instantiate directly                                  |
 
 
