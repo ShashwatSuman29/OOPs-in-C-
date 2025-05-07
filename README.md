@@ -490,6 +490,48 @@ They help in achieving **encapsulation** by keeping the data safe and providing 
 This helps in **code reusability** and creates a logical hierarchy between classes.
 
 ---
+# 🔄 Types of Inheritance in C++
+
+Inheritance is one of the key principles of Object-Oriented Programming in C++. It allows a new class (called the derived class) to reuse the properties and behavior (data members and functions) of an existing class (called the base class). This helps reduce code duplication and supports code reusability.
+
+---
+
+## 1️⃣ Single Inheritance
+
+In Single Inheritance, a class inherits from only one base class.
+
+**Example Use Case**: A `Dog` class inherits basic behavior from an `Animal` class.
+
+---
+
+## 2️⃣ Multilevel Inheritance
+
+In Multilevel Inheritance, a class is derived from another derived class. This forms a chain of inheritance.
+
+**Example Use Case**: A `Puppy` class inherits from `Dog`, and `Dog` inherits from `Animal`.
+
+---
+
+## 3️⃣ Multiple Inheritance
+
+In Multiple Inheritance, a single derived class inherits from more than one base class.
+
+**Example Use Case**: A class `C` inherits features from both class `A` and class `B`.
+
+🧠 **Note**: It can lead to ambiguity if both base classes have the same function. This is resolved using the scope resolution operator.
+
+---
+
+## 4️⃣ Hybrid Inheritance
+
+Hybrid Inheritance is a combination of two or more types of inheritance. For example, combining multiple and multilevel inheritance.
+
+**Example Use Case**: A class might inherit from two classes that themselves inherit from the same base class, leading to a "diamond problem."  
+🔧 **Solution**: This can be handled using **virtual inheritance** in C++ to avoid ambiguity.
+
+---
+
+Each type of inheritance helps model different real-world relationships and promotes cleaner, reusable, and organized code.
 
 
 
