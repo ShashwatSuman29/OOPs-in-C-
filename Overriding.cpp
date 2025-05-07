@@ -7,7 +7,7 @@ public:
     int topSpeed;
     float mileage;
 
-     virtual void sound()
+     virtual void sound() //same fucntion
     {
         cout << "Scooty sound" << endl;
     }
@@ -20,7 +20,8 @@ class Bike : public Scooty{
     public:
     int gears;
 
-    void sound(){
+    void sound(){ // same function
+        // this function is overriding the base class function
         cout << "Bike sound" << endl;
     }
 };
